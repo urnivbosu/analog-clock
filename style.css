@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.urniv{
+    color: rgb(255, 101, 101);
+    align-items:center;
+    top: 20px;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    align-items: top;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+    background-color: rgb(4, 4, 4);
+    color: rgb(241, 151, 235);
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.brand {
+    display: flex;
+    align-items: top;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fdfdfd;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(237, 63, 138) 0%, rgb(0, 0, 0) 100%);
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    /*align-items: center; */
+    height: 100vh;
+}
+
+.clock{
+    background-color: rgb(53, 5, 5);
+    width: 300px;
+    height: 300px;
+    border-radius: 99px;
+    color: #d4ff00;
+    border: 5px solid #ffea00;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.7), 0px 0px 20px rgba(0,0,0,0.7);
+    font-size: 26px;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top:200px;
+    left: 600px;
+    
+    margin: auto;
+    background-size: 100%;
+    
+}
+
+.clock ul li{
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+}
+
+.clock ul li span{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+.clock:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #ff00d4;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.needle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.needle span{
+    width: 5px;
+    height: var(--h);
+    background-color: var(--clr);
+    position: absolute;
+    border-radius: 5px;
+}
+body {
+    background-color: rgb(0, 0, 0);
+  }
